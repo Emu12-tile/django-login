@@ -1,8 +1,11 @@
 from django.db import models
-from django.contrib.auth.models import AbstractBaseUser
+from django.contrib.auth.models import AbstractBaseUser,AbstractUser
 import uuid
-# Create your models her
-class Register(AbstractBaseUser):
+
+# class CustomUser(AbstractUser):
+#     pass
+
+class RegisterE(AbstractBaseUser):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     Name= models.CharField(max_length=255,blank=True,null=True)
     email=models.EmailField(unique=True)
