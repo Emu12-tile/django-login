@@ -31,6 +31,7 @@ SECRET_KEY = 'django-insecure-nv9ysvcwo$(+#tgzc40k7a)ut(71_%k9a##btiu&dos%1y(gd_
 DEBUG = True
 
 ALLOWED_HOSTS = []
+AUTH_USER_MODEL = 'register.CustomUser'
 
 
 # Application definition
