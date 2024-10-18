@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'register',
+    "todo",
     'rest_framework',
     'rest_framework_simplejwt',
     'corsheaders',
